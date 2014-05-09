@@ -1,0 +1,25 @@
+==================================================
+Changes from 2013-05-09 00:00:00 +0000 to present.
+==================================================
+
+------------------------------------------
+version 0.001 at 2014-05-09 04:05:48 +0000
+------------------------------------------
+
+  Change: 9c44ef271ae8e2ba5204c241cbceb08e2c6da802
+  Author: Doug Bell <madcityzen@gmail.com>
+  Date : 2014-05-08 23:05:38 +0000
+
+    initial build artifacts 
+
+  Change: 1731dccd8dc18ca3dd24921a1bb20a64f241e00a
+  Author: Doug Bell <madcityzen@gmail.com>
+  Date : 2014-05-08 23:00:48 +0000
+
+    initial pod2usage use-cases
+
+    I only use the pod2usage( EXITCODE ) and pod2usage( MESSAGE ), really 
+
+================
+End of releases.
+================
