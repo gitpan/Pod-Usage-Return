@@ -23,13 +23,14 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Pod::Usage::Return",
   "PREREQ_PM" => {
-    "Pod::Usage" => 0
+    "Pod::Usage" => "1.36"
   },
   "TEST_REQUIRES" => {
+    "Capture::Tiny" => 0,
     "Test::Compile" => 0,
     "Test::Most" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }

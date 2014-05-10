@@ -1,6 +1,6 @@
 package Pod::Usage::Return;
 {
-  $Pod::Usage::Return::VERSION = '0.001';
+  $Pod::Usage::Return::VERSION = '0.002';
 }
 # ABSTRACT: pod2usage that returns instead of exits
 
@@ -48,7 +48,7 @@ Pod::Usage::Return - pod2usage that returns instead of exits
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 

@@ -4,6 +4,9 @@ use Test::More;
 use Capture::Tiny qw( capture );
 use Pod::Usage::Return qw( pod2usage );
 
+diag "-- VERSIONS --";
+diag "Pod::Usage - $Pod::Usage::VERSION";
+
 subtest 'pod2usage( EXITVAL )' => sub {
     my ( $out, $err, $exit ) = capture { pod2usage(0) };
     ok !$err, 'exit < 2 prints on stdout';

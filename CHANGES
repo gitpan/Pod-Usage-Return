@@ -1,9 +1,39 @@
 ==================================================
-Changes from 2013-05-09 00:00:00 +0000 to present.
+Changes from 2013-05-10 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.001 at 2014-05-09 04:05:48 +0000
+version 0.002 at 2014-05-10 02:39:51 +0000
+------------------------------------------
+
+  Change: 1cfe3bbe108e5e22fe6a2700de740f575b9bd15e
+  Author: Doug Bell <madcityzen@gmail.com>
+  Date : 2014-05-09 21:39:43 +0000
+
+    update build artifacts 
+
+  Change: b7f5acadb82ed8148e29339ae60f9e9719c345ab
+  Author: Doug Bell <madcityzen@gmail.com>
+  Date : 2014-05-09 21:39:33 +0000
+
+    tests require Capture::Tiny 
+
+  Change: d82e10f38c73209770626d5d15f1bbef5c942a5a
+  Author: Doug Bell <madcityzen@gmail.com>
+  Date : 2014-05-09 21:38:54 +0000
+
+    update build artifacts 
+
+  Change: 6c3b5a8ae210631ac3bca3a064261e52ba76e9db
+  Author: Doug Bell <madcityzen@gmail.com>
+  Date : 2014-05-09 21:38:20 +0000
+
+    add a minimum version for Pod::Usage
+
+    This is the least version I could find, and it still works. 
+
+------------------------------------------
+version 0.001 at 2014-05-09 04:05:38 +0000
 ------------------------------------------
 
   Change: 9c44ef271ae8e2ba5204c241cbceb08e2c6da802

@@ -18,16 +18,17 @@ my %module_build_args = (
     "Doug Bell <preaction\@cpan.org>"
   ],
   "dist_name" => "Pod-Usage-Return",
-  "dist_version" => "0.001",
+  "dist_version" => "0.002",
   "license" => "perl",
   "module_name" => "Pod::Usage::Return",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
-    "Pod::Usage" => 0
+    "Pod::Usage" => "1.36"
   },
   "script_files" => [],
   "test_requires" => {
+    "Capture::Tiny" => 0,
     "Test::Compile" => 0,
     "Test::Most" => 0
   }
