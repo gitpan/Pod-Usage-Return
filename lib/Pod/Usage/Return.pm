@@ -1,9 +1,6 @@
 package Pod::Usage::Return;
-{
-  $Pod::Usage::Return::VERSION = '0.002';
-}
 # ABSTRACT: pod2usage that returns instead of exits
-
+$Pod::Usage::Return::VERSION = '0.003';
 use strict;
 use warnings;
 use Pod::Usage ();
@@ -48,11 +45,10 @@ Pod::Usage::Return - pod2usage that returns instead of exits
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
-    use Pod::Usage::Return;
     use Pod::Usage::Return qw( pod2usage );
 
     exit pod2usage(0);
@@ -66,7 +62,21 @@ version 0.002
 =head1 DESCRIPTION
 
 This is a drop-in replacement for L<Pod::Usage> C<pod2usage> that returns the
-exit value instead of calling exit.g
+exit value instead of calling exit.
+
+=head1 RATIONALE
+
+Testing that your command-line script works is a good thing. It's a lot easier
+to test a module, so writing your command-line script as a module ("modulino")
+makes it easier to test.
+
+Unfortunately, L<Pod::Usage> automatically calls C<exit>, which again makes it
+harder to test your script. There is a way to prevent Pod::Usage from exiting,
+but it makes using Pod::Usage a lot less convenient.
+
+This module provides a drop-in C<pod2usage> replacement that returns the exit
+code instead of exiting, so that you can easily test your script while using
+Pod::Usage.
 
 =head1 FUNCTIONS
 

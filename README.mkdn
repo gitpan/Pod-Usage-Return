@@ -4,11 +4,10 @@ Pod::Usage::Return - pod2usage that returns instead of exits
 
 # VERSION
 
-version 0.002
+version 0.003
 
 # SYNOPSIS
 
-    use Pod::Usage::Return;
     use Pod::Usage::Return qw( pod2usage );
 
     exit pod2usage(0);
@@ -21,14 +20,28 @@ version 0.002
 
 # DESCRIPTION
 
-This is a drop-in replacement for [Pod::Usage](http://search.cpan.org/perldoc?Pod::Usage) `pod2usage` that returns the
-exit value instead of calling exit.g
+This is a drop-in replacement for [Pod::Usage](https://metacpan.org/pod/Pod::Usage) `pod2usage` that returns the
+exit value instead of calling exit.
+
+# RATIONALE
+
+Testing that your command-line script works is a good thing. It's a lot easier
+to test a module, so writing your command-line script as a module ("modulino")
+makes it easier to test.
+
+Unfortunately, [Pod::Usage](https://metacpan.org/pod/Pod::Usage) automatically calls `exit`, which again makes it
+harder to test your script. There is a way to prevent Pod::Usage from exiting,
+but it makes using Pod::Usage a lot less convenient.
+
+This module provides a drop-in `pod2usage` replacement that returns the exit
+code instead of exiting, so that you can easily test your script while using
+Pod::Usage.
 
 # FUNCTIONS
 
 ## pod2usage
 
-See [Pod::Usage](http://search.cpan.org/perldoc?Pod::Usage) for documentation. Returns the exit code instead of calling
+See [Pod::Usage](https://metacpan.org/pod/Pod::Usage) for documentation. Returns the exit code instead of calling
 exit().
 
 # AUTHOR
